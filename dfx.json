@@ -1,13 +1,11 @@
 {
   "canisters": {
-    "no_backend": {
-      "main": "src/no_backend/main.mo",
-      "type": "motoko"
+    "identity": {
+      "candid": "src/identity/identity.did",
+      "type": "custom",
+      "wasm": "src/identity/identity.wasm"
     },
     "no_backend_assets": {
-      "dependencies": [
-        "no_backend"
-      ],
       "frontend": {
         "entrypoint": "src/no_backend_assets/src/index.html"
       },

@@ -93,7 +93,7 @@ module.exports = {
     }),
     new webpack.EnvironmentPlugin({
       NODE_ENV: 'development',
-      NO_BACKEND_CANISTER_ID: canisters["no_backend"]
+      IDENTITY_CANISTER_ID: canisters['identity']
     }),
     new webpack.ProvidePlugin({
       Buffer: [require.resolve("buffer/"), "Buffer"],
